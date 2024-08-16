@@ -376,8 +376,8 @@ __declspec(dllexport) DWORD SW_init_sound(DWORD soundClass, const char* filePath
 	}
 
 	// Setup format (always the same because we decode everything first)
-	xaFormat.nAvgBytesPerSec = 88200;
-	xaFormat.nSamplesPerSec = 44100;
+	xaFormat.nAvgBytesPerSec = 96000;  // 48000 * 2 bytes per sample
+	xaFormat.nSamplesPerSec = 48000;   // 48 kHz
 	xaFormat.wBitsPerSample = 16;
 	xaFormat.nChannels = 1;
 	xaFormat.wFormatTag = WAVE_FORMAT_PCM;
